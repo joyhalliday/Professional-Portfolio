@@ -30,7 +30,13 @@ main {
 
 .portfolio
 {
+
     background-color: cornsilk;
+}
+
+img.portfolio {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .about {
@@ -43,8 +49,8 @@ background-color: coral;
 
 img {
     margin: 5px;
-    height: 350px;
-    width: 400px;
+    height: 400px;
+    width: 500px;
 }
 
 footer {
@@ -52,3 +58,14 @@ footer {
     align-items: baseline;
     background-color: chartreuse;
 }
+@media screen and (max-width: 992px) {
+    img.portfolio {
+      width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    img.portfolio {
+      width: 100%;
+    }
+  }
